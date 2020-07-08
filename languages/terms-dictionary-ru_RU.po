@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Terms Dictionary\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Aug 17 2016 17:50:07 GMT+0300 (Финляндия (лето))\n"
+"PO-Revision-Date: Wed Aug 17 2016 17:56:53 GMT+0300 (Финляндия (лето))\n"
+"Last-Translator: Somonator <test@test.test>\n"
+"Language-Team: \n"
+"Language: Russian\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10 >= 2 && "
+"n%10<=4 &&(n%100<10||n%100 >= 20)? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/\n"
+"X-Loco-Target-Locale: ru_RU"
+
+#: ../dictionary.php:33 ../dictionary.php:44
+msgid "Dictionary"
+msgstr "Словарь"
+
+#: ../dictionary.php:34
+msgid "Terms"
+msgstr "Термины"
+
+#: ../dictionary.php:35
+msgid "Add term"
+msgstr "Добавить термины"
+
+#: ../dictionary.php:36
+msgid "Add new terms"
+msgstr "Добавить новый термин"
+
+#: ../dictionary.php:37
+msgid "Edit term"
+msgstr "Изменить термин"
+
+#: ../dictionary.php:38
+msgid "New term"
+msgstr "Новый термин"
+
+#: ../dictionary.php:39
+msgid "All terms"
+msgstr "Все термины"
+
+#: ../dictionary.php:40
+msgid "View the term online"
+msgstr "Просмотреть термин на сайте"
+
+#: ../dictionary.php:41
+msgid "Search terms"
+msgstr "Искать термины"
+
+#: ../dictionary.php:42
+msgid "Terms not found."
+msgstr "Терминов не найдено."
+
+#: ../dictionary.php:43
+msgid "The basket does not have the terms."
+msgstr "В корзине нету терминов"
+
+#: ../dictionary.php:58
+msgid "All letters"
+msgstr "Все буквы"
+
+#: ../dictionary.php:67
+#, php-format
+msgid "Terms updated. <a href=\"%s\">View</a>"
+msgstr "Термин обновлен. <a href=\"%s\">Просмотреть</a>"
+
+#: ../dictionary.php:68
+msgid "The parameter is updated."
+msgstr "Параметр обновлен"
+
+#: ../dictionary.php:69
+msgid "The parameter is remove."
+msgstr "Параметр удален"
+
+#: ../dictionary.php:70
+msgid "Terms is updated"
+msgstr "Термин обновлен"
+
+#: ../dictionary.php:71
+#, php-format
+msgid "Terms  restored from the editorial: %s"
+msgstr "Термин восстановлен с: %s"
+
+#: ../dictionary.php:72
+#, php-format
+msgid "Term published on the website. <a href=\"%s\">View</a>"
+msgstr "Термин опубликован на сайт. <a href=\"%s\">Просмотреть</a>"
+
+#: ../dictionary.php:73
+msgid "Terms saved."
+msgstr "Термин сохранен"
+
+#: ../dictionary.php:74
+#, php-format
+msgid "Terms submitted for review. <a target=\"_blank\" href=\"%s\">View</a>"
+msgstr "Термин отправлен на пред осмотр. <a target=\"_blank\" href=\"%s\">Просмотреть</a>"
+
+#: ../dictionary.php:75
+#, php-format
+msgid ""
+"Scheduled for publication: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">View</a>"
+msgstr ""
+"Запланированные к публикации: <strong>%1$s</strong>. <a target=\"_blank\" "
+"href=\"%2$s\">Просмотреть</a>"
+
+#: ../dictionary.php:76
+#, php-format
+msgid "Draft updated terms.<a target=\"_blank\" href=\"%s\">View</a>"
+msgstr "Обновлен термин,<a target=\"_blank\" href=\"%s\">Просмотреть</a>"
+
+#: ../post/dict-single.php:16
+msgid "Edit"
+msgstr "Изменить"
+
+#: ../post/archive-dict.php:9
+msgid "Terms starting with"
+msgstr "Термин начинается с"
+
+#: ../post/archive-dict.php:39
+msgid "Previous page"
+msgstr "Предыдущая страница"
+
+#: ../post/archive-dict.php:40
+msgid "Next page"
+msgstr "Следующая страница"
+
+#: ../post/archive-dict.php:41
+msgid "Page"
+msgstr "Страница"
