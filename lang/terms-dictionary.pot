@@ -1,0 +1,141 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Terms Dictionary\n"
+"POT-Creation-Date: 2021-04-08 01:25+0300\n"
+"PO-Revision-Date: 2021-04-08 01:27+0300\n"
+"Last-Translator: \n"
+"Language-Team: Somonator\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: D:/Work/local_domains/wordpress/wp-content/plugins/terms-"
+"dictionary\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: dictionary.php:39 dictionary.php:50
+msgid "Dictionary"
+msgstr ""
+
+#: dictionary.php:40
+msgid "Terms"
+msgstr ""
+
+#: dictionary.php:41
+msgid "Add term"
+msgstr ""
+
+#: dictionary.php:42
+msgid "Add new terms"
+msgstr ""
+
+#: dictionary.php:43
+msgid "Edit term"
+msgstr ""
+
+#: dictionary.php:44
+msgid "New term"
+msgstr ""
+
+#: dictionary.php:45 frontend.php:57
+msgid "All terms"
+msgstr ""
+
+#: dictionary.php:46
+msgid "View the term online"
+msgstr ""
+
+#: dictionary.php:47
+msgid "Search terms"
+msgstr ""
+
+#: dictionary.php:48
+msgid "Terms not found."
+msgstr ""
+
+#: dictionary.php:49
+msgid "The basket does not have the terms."
+msgstr ""
+
+#: dictionary.php:65
+msgid "All letters"
+msgstr ""
+
+#: dictionary.php:75
+#, php-format
+msgid "Terms updated. <a href=\"%s\">View</a>"
+msgstr ""
+
+#: dictionary.php:76
+msgid "The parameter is updated."
+msgstr ""
+
+#: dictionary.php:77
+msgid "The parameter is remove."
+msgstr ""
+
+#: dictionary.php:78
+msgid "Terms is updated"
+msgstr ""
+
+#: dictionary.php:79
+#, php-format
+msgid "Terms  restored from the editorial: %s"
+msgstr ""
+
+#: dictionary.php:80
+#, php-format
+msgid "Term published on the website. <a href=\"%s\">View</a>"
+msgstr ""
+
+#: dictionary.php:81
+msgid "Terms saved."
+msgstr ""
+
+#: dictionary.php:82
+#, php-format
+msgid "Terms submitted for review. <a target=\"_blank\" href=\"%s\">View</a>"
+msgstr ""
+
+#: dictionary.php:83
+#, php-format
+msgid ""
+"Scheduled for publication: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">View</a>"
+msgstr ""
+
+#: dictionary.php:83
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: dictionary.php:84
+#, php-format
+msgid "Draft updated terms.<a target=\"_blank\" href=\"%s\">View</a>"
+msgstr ""
+
+#: dictionary.php:95
+msgid "Title"
+msgstr ""
+
+#: dictionary.php:96
+msgid "Letter"
+msgstr ""
+
+#: dictionary.php:153
+msgid "Dictionary Thumbnail"
+msgstr ""
+
+#: frontend.php:80
+msgid "Search:"
+msgstr ""
+
+#: frontend.php:110
+msgid "No terms yet ..."
+msgstr ""
+
+#: frontend.php:113
+msgid "Back"
+msgstr ""

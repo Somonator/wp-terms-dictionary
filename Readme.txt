@@ -1,7 +1,7 @@
 === Terms Dictionary === 
 Contributors: Somonator
-Tags: dictionary, automatic
-Tested up to: 5.2.3
+Tags: dictionary
+Tested up to: 5.7
 
 Create a dictionary to your site in a couple of clicks.
 
@@ -11,13 +11,19 @@ With this plugin you can create a simple dictionary to your site.
 == Installation ==
 1. Install this plugin
 2. Add shortcode to your page ([terms-dictionary])
+
+Shortcode params:
+- show_search (true|false) - Show search form, default - true
+- terms_per_page (number) - Terms per page, default - number posts from settings
+
+Exapmle: [terms-dictionary show_search="true" terms_per_page="6"]
+
 3. Add new terms
 
 == Frequently Asked Questions ==
 ● New terms are added in a special type of post "Dictionary".
 ● The plugin has shortcode [terms-dictionary], add it to your page.
 ● The letters to the terms are automatically determined.
-● You can translate this plugin into your language by using any editor. (If you did, please email me throw off the transfer, which would facilitate my work).
 
 == Screenshots ==
 1. Terms of dictionary
@@ -27,3 +33,4 @@ With this plugin you can create a simple dictionary to your site.
 1.1 Completely rewritten code, add shortcode, add automatic selection of letters.
 1.2 Add thumbnail for terms, add pagination.
 1.3 Autocreate page with shortcode, minimalizatian code, add link "all letters" and ect
+1.4 Add shortcode params: show_search, terms_per_page;, rewrite code, remove autocreate page, fix links when use simple permalinks

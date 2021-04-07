@@ -1,0 +1,5 @@
+/**
+* The plugin "Terms Dictionary" styles.
+*/
+
+.dictionary .terms_search{display:flex;flex-wrap:wrap;justify-content:flex-end;margin-bottom:20px}.dictionary .terms_search input[type=submit]{margin-left:10px}.dictionary .letters{border-bottom:1px solid #dedfde;display:flex;flex-wrap:wrap;padding-bottom:25px;margin-bottom:25px}.dictionary .letters .all-letters{font-size:15px;text-decoration:none;width:100%}.dictionary .letters .letter{background:#f0efea;box-shadow:-1px -1px 0 0 #fff;border-bottom:none;font-size:33px;color:#bec5d2;text-decoration:none;width:50px;height:50px;display:flex;justify-content:center;align-items:center;margin:3px;transition:all .2s ease-in}.dictionary .letters .letter:hover{background:#ece8d9}.dictionary .letters .letter.current{background:#494949;color:#fff}.dictionary .terms .term{text-align:justify}.dictionary .terms .term:not(:last-child){border-bottom:1px solid #eaeaea;padding-bottom:10px;margin-bottom:10px}.dictionary .terms .term .attachment-dictionary-thumbnail{width:auto;height:100px;margin:0 10px 10px 0;float:left}
