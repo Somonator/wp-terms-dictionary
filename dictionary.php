@@ -2,7 +2,7 @@
 /*
 	Plugin Name: Terms Dictionary
 	Description: Plugin to create a small dictionary with automatic grouping by letters.
-	Version: 1.4
+	Version: 1.4.1
 	Author: Somonator
 	Author URI: mailto:somonator@gmail.com
 	Text Domain: terms-dictionary
@@ -57,8 +57,8 @@ function __td_post_type_register() {
 		'menu_position' => 3,
 		'supports' => array( 'title', 'editor', 'thumbnail')
 	);
+
 	register_post_type('dict-terms', $args);
-	
 	register_taxonomy( 'dict-terms-letter', 'dict-terms', 
 		array(
 			'hierarchical' => true, 
@@ -69,19 +69,20 @@ function __td_post_type_register() {
 add_action('init', '__td_post_type_register');
 
 function __td_post_type_messages($messages) {
-	global $post, $post_ID;
+	global $post;
+
 	$messages['dict-terms'] = array( 
 		0 => '', 
-		1 => sprintf(__('Terms updated. <a href="%s">View</a>', 'terms-dictionary'), esc_url(get_permalink($post_ID))),
+		1 => __('Term updated.', 'terms-dictionary'),
 		2 => __('The parameter is updated.', 'terms-dictionary'),
-		3 => __('The parameter is remove.', 'terms-dictionary'),
-		4 => __('Terms is updated', 'terms-dictionary'),
+		3 => __('The parameter is removed.', 'terms-dictionary'),
+		4 => __('Term is updated', 'terms-dictionary'),
 		5 => isset($_GET['revision'])?sprintf(__('Terms  restored from the editorial: %s', 'terms-dictionary'), wp_post_revision_title((int)$_GET['revision'], false)):false,
-		6 => sprintf(__('Term published on the website. <a href="%s">View</a>', 'terms-dictionary'), esc_url(get_permalink($post_ID))),
-		7 => __('Terms saved.','terms-dictionary'),
-		8 => sprintf(__('Terms submitted for review. <a target="_blank" href="%s">View</a>', 'terms-dictionary'), esc_url(add_query_arg('preview', 'true', get_permalink($post_ID)))),
-		9 => sprintf(__('Scheduled for publication: <strong>%1$s</strong>. <a target="_blank" href="%2$s">View</a>', 'terms-dictionary'), date_i18n(__('M j, Y @ G:i'), strtotime($post->post_date)), esc_url(get_permalink($post_ID))),
-		10 => sprintf(__('Draft updated terms.<a target="_blank" href="%s">View</a>', 'terms-dictionary'), esc_url(add_query_arg('preview', 'true', get_permalink($post_ID)))),
+		6 => __('Term published on the website.', 'terms-dictionary'),
+		7 => __('Term saved.','terms-dictionary'),
+		8 => __('Term submitted for review.', 'terms-dictionary'),
+		9 => sprintf(__('Scheduled for publication: <strong>%1$s</strong>.', 'terms-dictionary'), date_i18n(__('M j, Y @ G:i'), strtotime($post->post_date))),
+		10 => __('Draft updated terms.', 'terms-dictionary'),
 	);
 	
 	return $messages;
@@ -105,8 +106,8 @@ function __td_posts_custom_columns_manage($column) {
 	
 	if ($column == 'letter') {
 		$term = get_the_terms($post->ID, 'dict-terms-letter');
-		
-		echo $term[0]->name;
+
+		echo isset($term[0]->name) ? $term[0]->name : '—';
 	}
 }
 add_action('manage_posts_custom_column', '__td_posts_custom_columns_manage');
@@ -183,8 +184,9 @@ function __td_shortcode_dictionary($atts) {
 		'terms_per_page' => get_option('posts_per_page')
 	), $atts);
 
-
-	wp_enqueue_style('td-styles');
+	if (!wp_script_is('td-styles', 'enqueued')) {
+		wp_enqueue_style('td-styles');
+	}
 	
 	ob_start();
 	require_once('frontend.php'); 

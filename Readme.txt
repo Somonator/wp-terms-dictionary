@@ -34,3 +34,4 @@ Exapmle: [terms-dictionary show_search="true" terms_per_page="6"]
 1.2 Add thumbnail for terms, add pagination.
 1.3 Autocreate page with shortcode, minimalizatian code, add link "all letters" and ect
 1.4 Add shortcode params: show_search, terms_per_page;, rewrite code, remove autocreate page, fix links when use simple permalinks
+1.4.1 Fix php notice after added terms without title, removed 404 view links from wp admin
